@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>For You</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <main class="shell">
+      <!-- Atmosphere layers -->
+      <div class="seasonLayer" aria-hidden="true"></div>
+      <div class="snow" aria-hidden="true"></div>
+      <div class="specialBadge" id="specialBadge" aria-hidden="true"></div>
+
+      <!-- LOCKED -->
+      <section id="locked" class="panel" aria-hidden="false">
+        <div class="hero">
+          <div class="lockmark" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M7 10V8a5 5 0 0 1 10 0v2"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+              />
+              <path
+                d="M7.5 10h9A2.5 2.5 0 0 1 19 12.5v6A2.5 2.5 0 0 1 16.5 21h-9A2.5 2.5 0 0 1 5 18.5v-6A2.5 2.5 0 0 1 7.5 10Z"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 14.2v2.6"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+
+          <h1 class="title">This opens when it’s ready.</h1>
+          <p class="subtitle">I’m building it carefully. You’ll know when it’s time.</p>
+
+          <div class="statusCard" role="group" aria-label="Progress status">
+            <div class="statusTop">
+              <div class="pill">
+                <span class="dot" aria-hidden="true"></span>
+                <span>In progress</span>
+              </div>
+            </div>
+
+            <div class="statusLine" id="statusLine">Quietly in motion.</div>
+
+            <div class="hint">
+              <span class="soft">Locked for now.</span>
+            </div>
+          </div>
+
+          <div class="unlockRow" hidden>
+            <input id="unlockInput" class="unlockInput" placeholder="Enter key" />
+            <button id="unlockBtn" class="unlockBtn">Unlock</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- UNLOCKED (placeholder) -->
+      <section id="unlocked" class="panel" aria-hidden="true">
+        <div class="hero">
+          <div class="unlockedMark" aria-hidden="true">Unlocked</div>
+          <h1 class="title">Welcome.</h1>
+          <p class="subtitle">
+            fr
+          </p>
+
+          <div class="statusCard">
+            <div class="statusLine">
+              etc
+            </div>
+
+            <div class="hint">
+              <button class="linkBtn" id="relockBtn" type="button">Re-lock</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
