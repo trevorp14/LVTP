@@ -5,9 +5,8 @@ const ROTATE = true;
 
 const STATUS_LINES = [
   "Not ready yet.",
-  "I've got something planned.",
+  "This one's for you.",
   "Some things are worth waiting for.",
-  "For you.",
   "🖤"
 ];
 
@@ -16,7 +15,7 @@ let index = 0;
 setInterval(() => {
   statusLine.textContent = lines[index % lines.length];
   index++;
-}, 7000);
+}, 9000);
 
 // ====== STATE ======
 const qs = new URLSearchParams(window.location.search);
